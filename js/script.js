@@ -12,7 +12,11 @@ header__burger.forEach(function (item) {
 const we = document.querySelector('.swiper-we');
 if(we) {
     const swiper = new Swiper('.swiper-we', {
+      autoplay: {
+        delay: 2500,
+      },
       loop: true,
+      pauseOnMouseEnter:true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true
